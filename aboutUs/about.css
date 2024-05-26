@@ -139,6 +139,10 @@ body>section:nth-child(3)>div>div , body>section:nth-child(4)>div>div{
     justify-content: space-between;
 }
 
+body>section:nth-child(3)>div>div>div:first-child img , body>section:nth-child(4)>div>div>div:first-child img{
+    border-radius: 10px;
+}
+
 body>section:nth-child(3) .text>div , body>section:nth-child(4) .text>div{
     display: flex;
     gap: 20px;

@@ -23,56 +23,56 @@ a{
     text-decoration: none;
 }
 
-header{
+.pc, .mob{
     height: 120px;
     display: flex;
     align-items: center;
 }
 
-header>div{
+.pc>div{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header>div>a{
+.pc>div>a, .mob>div>a{
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-header>div>a>span{
+.pc>div>a>span, .mob>div>a>span{
     font-size: 18px;
     color: #231E1E;
 }
 
-header>div>nav>ul{
+.pc>div>nav>ul{
     list-style: none;
     display: flex;
     gap: 70px;
     color: #676262;
 }
-header>div>nav a{
+.pc>div>nav a{
     color: #676262;
     font-size: 18px;
 }
 
-header>div>div:last-child{
+.pc>div>div:last-child{
     display: flex;
     align-items: center;
     gap: 40px;
     position: relative;
 }
 
-header>div>div>a{
+.pc>div>div>a{
     font-size: 20px;
 }
 
-header>div>div>a:first-child{
+.pc>div>div>a:first-child{
     color: #170743;
 }
 
-header>div>div>a:first-child::before{
+.pc>div>div>a:first-child::before{
     content: "";
     position: absolute;
     left: -70px;
@@ -83,7 +83,7 @@ header>div>div>a:first-child::before{
     transform: rotate(90deg);
 }
 
-header>div>div>a:last-child{
+.pc>div>div>a:last-child{
     padding: 5px 25px;
     border-radius: 7px;
     background-color: var(--primary-color);
@@ -91,11 +91,93 @@ header>div>div>a:last-child{
 }
 
 
+
+/* Header Mobile */
+
+.mob{
+    display: none;
+}
+
+.mob>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mob>div>nav{
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 120px);
+    background: #FDF0F0;
+    display: flex;
+    justify-content: center;
+}
+
+.mob>div>nav>div>ul{
+    list-style: none;
+    padding: 20px;
+}
+
+.mob>div>nav>div>ul>li{
+    margin-bottom: 20px;
+}
+
+.mob>div>nav a{
+    color: #676262;
+    font-size: 18px;
+}
+
+.mob>div>nav>div>div:last-child{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+}
+
+.mob>div>nav>div>div:last-child>a:first-child{
+    color: #170743;
+}
+.mob>div>nav>div>div:last-child>a:last-child{
+    padding: 5px 25px;
+    border-radius: 7px;
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+.mob .right span{
+    cursor: pointer;
+}
+.mob .right #menu_close{
+    font-size: 23px;
+    display: none;
+    color: var(--primary-color);
+}
+
+@media (max-width:1100px){
+    header:first-child{
+        display: none;
+    }
+    .mob{
+        display: flex;
+    }
+}
+
+/* @keyframes menu{
+    form{
+        top: -100vh;
+    }
+    to{
+        top: 120px;
+    }
+} */
+
+
 /* Start Hero */
 
 .hero{
     height: calc(100vh - 120px);
-    background-image: url("../images/bg.png");
+    background-image: url("images/bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,24 +198,24 @@ header>div>div>a:last-child{
 
 /*  */
 
-body>section:nth-child(3){
+body>section:nth-child(4){
     padding: 60px 0;
 }
 
-body>section:nth-child(3) h1{
+body>section:nth-child(4) h1{
     font-size: 42px;
     color: #231E1E;
     width: 599px;
 }
 
 
-body>section:nth-child(3) .text>div{
+body>section:nth-child(4) .text>div{
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
 }
 
-body>section:nth-child(3) .text>div>div:first-child{
+body>section:nth-child(4) .text>div>div:first-child{
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -144,59 +226,59 @@ body>section:nth-child(3) .text>div>div:first-child{
     
 }
 
-body>section:nth-child(3) .text>div>div>img{
+body>section:nth-child(4) .text>div>div>img{
     width: 31.5px;
 }
 
-body>section:nth-child(3) .text>div>div:last-child{
+body>section:nth-child(4) .text>div>div:last-child{
     width: 422px;
     color: #676262;
     font-size: 18px;
 }
 
-body>section:nth-child(3) .text>div>div>h4{
+body>section:nth-child(4) .text>div>div>h4{
     color: #231E1E;
     font-size: 24px;
 }
 
-body>section:nth-child(3)>div>div{
+body>section:nth-child(4)>div>div{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-body>section:nth-child(3)>div>div .pr-img img{
+body>section:nth-child(4)>div>div .pr-img img{
     width: 530px;
 }
 
 
 /*  */
 
-body>section:nth-child(4){
+body>section:nth-child(5){
     padding: 50px 0;
 }
 
-body>section:nth-child(4) h1{
+body>section:nth-child(5) h1{
     width: 620px;
     font-size: 42px;
     color: #231E1E;
     padding-bottom: 30px;
 }
 
-body>section:nth-child(4) form{
+body>section:nth-child(5) form{
     width: 822px;
     background: #FFF;
     padding: 20px;
     border-radius: 10px;
 }
 
-body>section:nth-child(4) form>div{
+body>section:nth-child(5) form>div{
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 20px;
 }
-body>section:nth-child(4) form>div>input{
+body>section:nth-child(5) form>div>input{
     width: 371px;
     height: 62px;
     font-size: 18px;
@@ -208,7 +290,7 @@ body>section:nth-child(4) form>div>input{
     border-radius: 7px;
 }
 
-body>section:nth-child(4) form>textarea{
+body>section:nth-child(5) form>textarea{
     width: 100%;
     height: 150px;
     font-size: 18px;
@@ -222,7 +304,7 @@ body>section:nth-child(4) form>textarea{
 
 }
 
-body>section:nth-child(4) form>button{
+body>section:nth-child(5) form>button{
     width: 371px;
     background: var(--primary-color);
     outline: none;

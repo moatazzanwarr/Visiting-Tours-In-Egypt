@@ -10,11 +10,14 @@
       href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Style Sheet -->
     <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
-    <header>
+
+    <header class="pc">
       <div class="container">
         <a href="#">
           <img src="images/logo.png" alt="logo" />
@@ -36,6 +39,38 @@
         </div>
       </div>
     </header>
+
+    <header class="mob">
+      <div class="container">
+        <a href="#">
+          <img src="images/logo.png" alt="logo" />
+          <span>Logo</span>
+        </a>
+
+        <nav id="mobNav">
+          <div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Destination</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+            <div>
+              <a href="#">Sign Up</a>
+              <a href="#">Login</a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="right">
+            <span id="menu_open" href="#"><img src="images/menu.png" alt="menu"></span>
+            <span id="menu_close" href="#"><i class="fa-solid fa-xmark"></i></span>
+        </div>
+    
+      </div>
+    </header>
+
+
 
     <section class="hero">
       <div class="text">
