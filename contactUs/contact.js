@@ -13,3 +13,17 @@ menu_close.addEventListener("click",()=>{
     menu_open.style.display = "block"
 });
 
+//////////////////////////////
+
+const companyInformation = {
+    address: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis a mauris, in maecenas luctus.",
+    emailAddress:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis a mauris, in maecenas luctus.",
+    phoneNumber: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque duis a mauris, in maecenas luctus."
+}
+const detAddress = document.querySelector("#detAddress");
+const detEmail = document.querySelector("#detEmail");
+const detPhone = document.querySelector("#detPhone");
+
+detAddress.innerText = companyInformation.address;
+detEmail.innerText = companyInformation.emailAddress;
+detPhone.innerText = companyInformation.phoneNumber;

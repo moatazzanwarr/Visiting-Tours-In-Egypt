@@ -160,18 +160,14 @@ a{
     }
     .mob{
         display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: #FDF0F0;
     }
 }
-
-/* @keyframes menu{
-    form{
-        top: -100vh;
-    }
-    to{
-        top: 120px;
-    }
-} */
-
 
 /* Start Hero */
 
@@ -202,12 +198,14 @@ body>section:nth-child(4){
     padding: 60px 0;
 }
 
-body>section:nth-child(4) h1{
+body>section:nth-child(4) h1:first-child{
     font-size: 42px;
     color: #231E1E;
     width: 599px;
 }
-
+body>section:nth-child(4) h1:nth-child(2){
+    display: none;
+}
 
 body>section:nth-child(4) .text>div{
     display: flex;
@@ -249,6 +247,41 @@ body>section:nth-child(4)>div>div{
 
 body>section:nth-child(4)>div>div .pr-img img{
     width: 530px;
+}
+
+@media(max-width:1100px){
+    body>section:nth-child(4) h1:first-child{
+        display: none;
+    }
+    body>section:nth-child(4) h1:nth-child(2){
+        font-size: 20px;
+        text-align: center;
+        width: 317px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        display: block;
+    }
+    body>section:nth-child(4) .text>div>div:first-child{
+        width: 32px;
+        height:32px;
+    }
+    body>section:nth-child(4) .text>div>div>img{
+        width: 17px;
+    }
+    body>section:nth-child(4) .text>div>div:last-child{
+        width: 286px;
+        color: #676262;
+        font-size: 18px;
+    }
+    body>section:nth-child(4) .text>div>div>h4{
+        font-size: 18px;
+    }
+    body>section:nth-child(4) .text>div>div>p{
+        font-size: 14px;
+    }
+    body>section:nth-child(4)>div>div .pr-img{
+        display: none;
+    }
 }
 
 
@@ -315,6 +348,36 @@ body>section:nth-child(5) form>button{
     cursor: pointer;
 }
 
+@media(max-width:1100px){
+    body>section:nth-child(5) h1{
+        width: 317px;
+        font-size: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    body>section:nth-child(5) form{
+        width: 100%;
+    }
+    body>section:nth-child(5) form>div:first-child{
+        flex-direction: column;
+    }
+    body>section:nth-child(5) form>div:nth-child(2){
+        flex-direction: column;
+    }
+    body>section:nth-child(5) form>div>input{
+        width: 100%;
+        font-size: 14px;
+        height: 44px;
+    }
+    body>section:nth-child(5) form>textarea{
+        font-size: 14px;
+    }
+    body>section:nth-child(5) form>button{
+        width: 100%;
+        font-size: 20px;
+    }
+
+}
 
 /* Footer */
 
@@ -363,4 +426,10 @@ footer>div>div:first-child>div>a{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+@media(max-width:1100px){
+    footer{
+        overflow: hidden;
+    }
 }
