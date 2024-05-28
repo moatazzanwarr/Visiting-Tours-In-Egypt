@@ -1,35 +1,38 @@
-/**
- * @param {integer} init
- * @return { increment: Function, decrement: Function, reset: Function }
- */
-var createCounter = function(init) {
-    let val = init;
-    return{
-        increment : () =>{
-            for(let i = 0; i < val; i++){
-                val++;
-            }
-        },
-        decrement : () =>{
-            for(let i = 0; i < val; i++){
-                val--;
-            }
-        },
-        reset : (clear) =>{
-            clearInterval(clear,1000);
-        }
-    }
-    
-};
-// createCounter(10).increment()
-// setInterval(createCounter(10).increment(),100)
-// setInterval(createCounter(10).decrement(),100)
-// createCounter().increment(increment())
-// createCounter().increment(decrement())
+let pInfo = document.querySelectorAll(".pInfo")
 
-/**
- * const counter = createCounter(5)
- * counter.increment(); // 6
- * counter.reset(); // 5
- * counter.decrement(); // 4
- */
+let card = document.querySelectorAll(".card");
+let cardImg = document.querySelectorAll(".card img");
+let titels = document.querySelectorAll(".card>h4");
+let prices = document.querySelectorAll(".price>span:first-child");
+
+
+let dataUrl = "data.json";
+
+let getData = (callBack)=>{
+    fetch(dataUrl)
+        .then(res => res.json())
+        .then(data => {
+            callBack(data)
+        })
+        .catch(err => err)
+}
+getData(insertData)
+
+function insertData (e){
+    for (let i = 0; i < pInfo.length; i++) {
+        pInfo[i].innerText = e.pInfo[i]
+    }
+    for (let i = 0; i < cardImg.length; i++) {
+        cardImg[i].src = e.cardImg[i]
+    }
+    for (let i = 0; i < titels.length; i++) {
+        titels[i].innerHTML = e.titels[i]
+    }
+    for (let i = 0; i < prices.length; i++) {
+        prices[i].innerHTML = e.prices[i]
+    }
+    for (let i = 0; i < prices.length; i++) {
+        prices[i].innerHTML = e.price[i]
+    }
+}
+

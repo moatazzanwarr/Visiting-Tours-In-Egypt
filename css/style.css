@@ -5,3 +5,15 @@
     font-family:Poppins;
 }
 
+.container{
+    display: flex;
+}
+
+.container .card{
+    width: 250px;
+    overflow: hidden;
+}
+
+.container img{
+    width: 100%;
+}
