@@ -424,6 +424,7 @@ footer{
 footer>div{
     display: flex;
     gap: 70px;
+    flex-wrap: wrap;
 }
 
 footer h4{
