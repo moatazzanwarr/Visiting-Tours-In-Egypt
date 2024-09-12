@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="pc">
+      <div class="container">
+        <a href="./index.html">
+          <img src="./images/Ellipse 1.png" alt="logo" />
+          <span>Logo</span>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li>
+              <a href="./destination_page/destination.html">Destination</a>
+            </li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="./aboutUs/about.html">About Us</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <a href="#">Sign Up</a>
+          <a href="#">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <header class="mob">
+      <div class="container">
+        <a href="#">
+          <img src="./images/Ellipse 2.png" alt="logo" />
+          <span>Logo</span>
+        </a>
+
+        <nav id="mobNav">
+          <div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Destination</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+            <div>
+              <a href="#">Sign Up</a>
+              <a href="#">Login</a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="right">
+          <span id="menu_open" href="#"
+            ><img src="./images/menu.png" alt="menu"
+          /></span>
+          <span id="menu_close" href="#"
+            ><i class="fa-solid fa-xmark"></i
+          ></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="text">
+        <h1>Plan Your Trip Visiting Tours In Egyp</h1>
+        <div class="texth3"></div>
+      </div>
+      <div class="links">
+        <button onclick="location.href='pagination'">Explore with me</button>
+        <a target="_blank" href="https://youtu.be/BapSQFJPMM0?feature=shared"
+          ><img src="./images/Group.png" alt=""
+        /></a>
+
+        <a target="_blank" href="https://youtu.be/BapSQFJPMM0?feature=shared"
+          >Watch with video</a
+        >
+      </div>
+      <div class="discover">
+        <select id="your-location" name="your-location">
+          <option value="">Your location</option>
+          <option value="Morocco">Morocco</option>
+          <option value="Algeria">Algeria</option>
+          <option value="France">France</option>
+          <option value="USA">USA</option>
+          <option value="Britain">Britain</option>
+          <option value="Germany">Germany</option>
+          <option value="Australia">Australia</option>
+          <option value="Sudan">Sudan</option>
+          <option value="Spain">Spain</option>
+        </select>
+        <select
+          class="mySelector"
+          id="your destination"
+          name="your destination"
+        >
+          <option value="">Where are you going?</option>
+          <option value="pyramids">Pyramids of Giza</option>
+          <option value="sphinx">Great Sphinx of Giza</option>
+          <option value="luxor_temple">Luxor Temple</option>
+          <option value="karnak_temple">Karnak Temple</option>
+          <option value="valley_of_kings">Valley of the Kings</option>
+          <option value="abu_simbel">Abu Simbel Temples</option>
+          <option value="saqqara">Saqqara</option>
+          <option value="philae_temple">Philae Temple</option>
+          <option value="medinet_habu">Medinet Habu</option>
+        </select>
+        <input
+          type="text"
+          id="tour-date"
+          name="tour-date"
+          placeholder="When?"
+        />
+        <button id="discover">Discover now</button>
+      </div>
+    </main>
+
+    <div id="about" class="about section">
+      <h1>Why Travel With US?</h1>
+      <div class="container">
+        <div class="box">
+          <img src="./images/Group 11.png" alt="" />
+          <h3>Professional Tour Guide</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            duis a mauris, in maecenas luctus.
+          </p>
+        </div>
+        <div class="box">
+          <img src="./images/Group 12.png" alt="" />
+          <h3>Travel Ease</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            duis a mauris, in maecenas luctus.
+          </p>
+        </div>
+        <div class="box">
+          <img src="./images/Group 13.png" alt="" />
+          <h3>Security Guarantee</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+            duis a mauris, in maecenas luctus.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination" id="pagination">
+      <h1>Destination Recomendation For You</h1>
+    </div>
+    <div id="content" class="content section"></div>
+    <button id="viewAll">View All</button>
+
+    <div class="feedback">
+      <h1>Our Customers Oppinions</h1>
+      <div class="slider">
+        <div class="slider-wrapper">
+          <div class="card">
+            <img
+              class="main-img"
+              src="./images/nariman-mesharrafa-qqDPI-294mw-unsplash 1.png"
+              alt="Image 1"
+            />
+            <div class="avatar-feedback">
+              <div class="box">
+                <img class="avatar" src="./images/Mask Group (1).png" alt="" />
+                <div class="name-country">
+                  <span class="name">Alexander R</span>
+                  <span class="country">Russia</span>
+                </div>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, hic labore non soluta rem sequi accusamus laboriosam ea
+                libero assumenda placeat cumque ratione, at iusto numquam. Rem
+                quibusdam esse rerum.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              class="main-img"
+              src="./images/karnak-4634094_1920.png"
+              alt="Image 1"
+            />
+            <div class="avatar-feedback">
+              <div class="box">
+                <img class="avatar" src="./images/Mask Group.png" alt="" />
+                <div class="name-country">
+                  <span class="name">Alexander R</span>
+                  <span class="country">Russia</span>
+                </div>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, hic labore non soluta rem sequi accusamus laboriosam ea
+                libero assumenda placeat cumque ratione, at iusto numquam. Rem
+                quibusdam esse rerum.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="main-img" src="./images/pyramids.png" alt="Image 1" />
+            <div class="avatar-feedback">
+              <div class="box">
+                <img class="avatar" src="./images/Mask Group.png" alt="" />
+                <div class="name-country">
+                  <span class="name">Alexander R</span>
+                  <span class="country">Russia</span>
+                </div>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, hic labore non soluta rem sequi accusamus laboriosam ea
+                libero assumenda placeat cumque ratione, at iusto numquam. Rem
+                quibusdam esse rerum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-buttons">
+        <button class="nav-button left">&lt;</button>
+        <button class="nav-button right">&gt;</button>
+      </div>
+      <div class="email section">
+        <div class="container">
+          <h1>Get Interesting Information For You About Traveling In Egypt</h1>
+          <div class="box">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Your Email Address"
+            />
+            <button>Submit Email Address</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <h2>Front</h2>
+          <p>This is the front of the card.</p>
+        </div>
+        <div class="card-back">
+          <h2>Back</h2>
+          <p>This is the back of the card.</p>
+        </div>
+      </div>
+    </div> -->
+    <footer>
+      <div class="container">
+        <div>
+          <div>
+            <a href="#">
+              <img src="./images/Ellipse 2.png" alt="logo2" />
+              <span>Logo</span></a
+            >
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem erat
+            purus commodo mollis viverra vitae fusce. Feugiat condimentum leo,
+            dui posuere sit.
+          </p>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="./aboutUs/about.html">About US</a></li>
+            <li><a href="./contactUs/contact.html">Contact US</a></li>
+            <li><a href="#">Help me</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About US</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Follow Me:</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="./images/youtube.png" alt="youtube" />Youtube</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./images/facebook-circle-line.png"
+                  alt="facebook"
+                />Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./images/linkedin-box-line.png"
+                  alt="linkedin"
+                />LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="./images/instagram-line.png"
+                  alt="instagram"
+                />Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

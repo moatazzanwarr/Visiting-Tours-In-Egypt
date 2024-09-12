@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/add-editdest.css">
+    </head>
+    <body>
+        <aside>
+            <div class="logo">
+                <span class="icon"></span>logo
+            </div>
+        
+        <nav>
+            <div class="list  ">
+                <a href="dashboard.html"><div class="list-head" id="head1"><i class="ri-dashboard-line"></i>Dashboard</div></a>
+            </div>
+            <div class="list" id="list1">
+                <div class="list-head " id="head2"><i class="ri-medal-2-line"></i>Destination<i class="ri-arrow-right-s-line arrow arrow-rot"></i></div>
+                <a href="alldest.html" class="item ">All Destination</a>
+                <a href="adddest.html" class="item ">Add Destination</a>
+                <a href="editdest.html" class="item active">Edit Destination</a>
+            </div>
+            
+            <div class="list" id="list2">
+                <div class="list-head" id="head3"><i class="ri-user-line"></i>User<i class="ri-arrow-right-s-line arrow"></i></div>
+                <a href="alluser.html" class=" item d-none">all user</a>
+                <a href="adduser.html" class=" item d-none">add user</a>
+                <a href="edituser.html" class=" item d-none">edit user</a>
+            </div>
+        </nav>
+    </aside>
+    
+    
+    
+    <main>
+        <header>
+            <div class="search">
+            <input type="search" class="searching" placeholder="searching">
+            <i class="ri-search-line"></i>
+            </div>
+            <div class="notify">
+                <i class="ri-question-answer-line"></i>
+                <i class="ri-notification-3-line"></i>
+            </div>
+        </header>
+        <section class="content">
+            <section class="sec-1 ">
+                <span class="title">edit destination</span>
+                <div class="input-group">
+                    <input type="text" class="inputs" placeholder="destination name">
+                    <input type="text" class="inputs" placeholder="location">
+                    <input type="text" class="inputs" placeholder="tour duration">
+                    <input type="text" class="inputs" placeholder="price">
+                </div>
+                <div class="input-group">
+                    <input type="text" class="inputs desc" placeholder="short description of destination">
+                </div>
+            </section>
+
+            <section class="sec-2 ">
+                <span class="title">information</span>
+                <div class="input-group">
+                    <input type="text" class="inputs desc" placeholder="Add information or stories about the destination">
+                </div>
+            </section>
+
+            <section class="sec-3 ">
+                <span class="title">gallery</span>
+                <div class="input-img">
+                    <div class="g-head">Upload Destination Photo</div>
+                    <div class="g-head g-label">Upload file or Drang and Drop</div>
+                    <input value="Browse" class="Browse">
+                </div>
+            </section>
+
+            <section class="sec-4">
+                <span class="title">trip plan</span>
+                    <div class="trip input-group">
+                        <input type="text" class="inputs desc" placeholder="Examples">
+                    </div>
+                    <span class="btn">add trip plan</span>
+            </section>
+
+
+            <section class="sec-5">
+                <span class="title">include</span>
+                <div class="include ">
+                    <div class="f-data left">
+                        <div class=" f input-group">
+                            <label for="nam">faculty name :</label>
+                            <input type="text" class=" " id="nam" >
+                            <span class="btn">Add Facility</span>
+                            
+                        </div>
+                    </div>
+                    <div class="f-data right">
+                        <div class=" f input-group">
+                            <label for="nam">faculty details :</label>
+                            <input type="text" class=" " id="det" >
+                            <input type="text" class=" " id="det" >
+                            <span class="btn">Add Facility Details</span>
+                        </div>
+                    </div>
+                    <input type="submit" value="submit" id="submit">
+
+                </div>
+            </section>
+
+        </section>
+    </main>
+    
+
+
+    <footer>
+        <div class="par">
+            <div class="logo">
+                <span class="icon"></span>logo
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem erat purus commodo mollis viverra vitae fusce. Feugiat condimentum leo, dui posuere sit.</p>
+        </div>
+        <div class="comp">
+            <span class="first-item">company</span>
+            <a href="">about us</a><a href="">contact us</a><a href=""> help me</a>
+        </div>
+        <div class="links">
+            <span class="first-item">links</span>
+            <a href="">destination</a><a href="">gallery</a><a href=""> about us</a>
+        </div>
+        <div class="follow">
+            <span class="first-item">follow me:</span>
+            <a href=""><i class="ri-youtube-line"></i> youtube</a>
+            <a href=""><i class="ri-facebook-circle-line"></i> facebook</a>
+            <a href=""><i class="ri-linkedin-box-line"></i></i> linkedin</a>
+            <a href=""><i class="ri-instagram-line"></i> instgram</a>
+        </div>
+    </footer>
+
+
+    
+</body>
+<script src="js/main.js"></script>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/alluser.css">
+    </head>
+    <body>
+        <aside>
+            <div class="logo">
+                <span class="icon"></span>logo
+            </div>
+        
+        <nav>
+            <div class="list  ">
+                <a href="dashboard.html"><div class="list-head" id="head1"><i class="ri-dashboard-line"></i>Dashboard</div></a>
+            </div>
+            <div class="list" id="list1">
+                <div class="list-head " id="head2"><i class="ri-medal-2-line"></i>Destination<i class="ri-arrow-right-s-line arrow"></i></div>
+                <a href="alldest.html" class="item d-none">All Destination</a>
+                <a href="adddest.html" class="item d-none">Add Destination</a>
+                <a href="editdest.html" class="item d-none">Edit Destination</a>
+            </div>
+            
+            <div class="list" id="list2">
+                <div class="list-head" id="head3"><i class="ri-user-line"></i>User<i class="ri-arrow-right-s-line arrow arrow-rot"></i></div>
+                <a href="alluser.html" class=" item active">all user</a>
+                <a href="adduser.html" class=" item ">add user</a>
+                <a href="edituser.html" class=" item ">edit user</a>
+            </div>
+        </nav>
+    </aside>
+    
+    
+    
+    <main>
+        <header>
+            <div class="search">
+            <input type="search" class="searching" placeholder="searching" onkeyup="userSearch(this.value)">
+            <i class="ri-search-line"></i>
+            </div>
+            <div class="notify">
+                <i class="ri-question-answer-line"></i>
+                <i class="ri-notification-3-line"></i>
+            </div>
+        </header>
+
+        <section class="content">
+            <span class="table-title">all user</span>
+            <table>
+                <thead>
+                    <th>id</th>
+                    <th>user</th>
+                    <th>email</th>
+                    <th>country</th>
+                    <th>action</th>
+                </thead>
+                <tbody id="userstable">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="par">
+            <div class="logo">
+                <span class="icon"></span>logo
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem erat purus commodo mollis viverra vitae fusce. Feugiat condimentum leo, dui posuere sit.</p>
+        </div>
+        <div class="comp">
+            <span class="first-item">company</span>
+            <a href="">about us</a><a href="">contact us</a><a href=""> help me</a>
+        </div>
+        <div class="links">
+            <span class="first-item">links</span>
+            <a href="">destination</a><a href="">gallery</a><a href=""> about us</a>
+        </div>
+        <div class="follow">
+            <span class="first-item">follow me:</span>
+            <a href=""><i class="ri-youtube-line"></i> youtube</a>
+            <a href=""><i class="ri-facebook-circle-line"></i> facebook</a>
+            <a href=""><i class="ri-linkedin-box-line"></i> linkedin</a>
+            <a href=""><i class="ri-instagram-line"></i> instgram</a>
+        </div>
+    </footer>
+
+
+    
+</body>
+<script src="/js/alldata.js"></script>
+<script src="js/main.js"></script>
+</html>

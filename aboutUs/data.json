@@ -1,0 +1,25 @@
+{
+    "pInfo": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra ornare orci, mattis velit imperdiet nec nisl magna.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra ornare orci, mattis velit imperdiet nec nisl magna.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra ornare orci, mattis velit imperdiet nec nisl magna.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra ornare orci, mattis velit imperdiet nec nisl magna.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra ornare orci, mattis velit imperdiet nec nisl magna.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque viverra ornare orci, mattis velit imperdiet nec nisl magna."
+    ],
+    "cardImg": [
+        "images/card-1.png",
+        "images/card-2.png",
+        "images/card-3.png"
+    ],
+    "titels": [
+        "Sharm El Seikh",
+        "Pyramid Giza",
+        "Temple Of Kom Ombo"
+    ],
+    "prices": [
+        "$123",
+        "$500",
+        "$123"
+    ]
+}

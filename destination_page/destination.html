@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="pc">
+      <div class="container">
+        <a href="../index.html">
+          <img src="../images/Ellipse 1.png" alt="logo" />
+          <span>Logo</span>
+        </a>
+
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li>
+              <a href="destination.html">Destination</a>
+            </li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="../aboutUs/about.html">About Us</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <a href="#">Sign Up</a>
+          <a href="#">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <header class="mob">
+      <div class="container">
+        <a href="#">
+          <img src="./images/Ellipse 2.png" alt="logo" />
+          <span>Logo</span>
+        </a>
+
+        <nav id="mobNav">
+          <div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Destination</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+            <div>
+              <a href="#">Sign Up</a>
+              <a href="#">Login</a>
+            </div>
+          </div>
+        </nav>
+
+        <div class="right">
+          <span id="menu_open" href="#"
+            ><img src="./images/menu.png" alt="menu"
+          /></span>
+          <span id="menu_close" href="#"
+            ><i class="fa-solid fa-xmark"></i
+          ></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="mainDiv">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">
+          &#171;
+        </button>
+        <button class="carousel-button next" data-carousel-button="next">
+          &#187;
+        </button>
+        <ul data-slides>
+          <li class="slide" data-active>
+
+            <img src="./images/firstGallery.png" alt="image 1" />
+          </li>
+          <li class="slide">
+
+            <img src="./images/secondGallery.png" alt="image 2" />
+          </li>
+          <li class="slide">
+
+            <img src="./images/thirdGallery.png" alt="image 3" />
+          </li>
+          <li class="slide">
+            <img src="./images/fourthGallery.png" alt="image 4" />
+          </li>
+        </ul>
+      </div>
+    </main>
+    <div class="data-container">
+      <div class="data-box">
+        <img src="./images/location-icon.png" alt="location-image" />
+        <div class="data-text">
+          <span>Location</span>
+          <h4 id="location-text"></h4>
+        </div>
+      </div>
+      <div class="data-box">
+        <img src="./images/time-icon.png" alt="time-image" />
+        <div class="data-text">
+          <span>Tour Duration</span>
+          <h4>4 Days</h4>
+        </div>
+      </div>
+      <div class="data-box">
+        <img src="./images/price-icon.png" alt="price-image" />
+        <div class="data-text">
+          <span>Price</span>
+          <h4>250 $</h4>
+        </div>
+      </div>
+    </div>
+    <div class="buttons-container">
+      <button class="button active-button" id="information">Information</button>
+      <button class="button" id="gallery">Gallery</button>
+      <button class="button" id="trip">Trip Plan</button>
+      <button class="button" id="include">Include</button>
+    </div>
+    <div class="content-container">
+      <div class="contents">
+        <div id="overviewDiv" class="overview">
+          <h1>Overview</h1>
+          <p>
+            The Kom Ombo Temple was built between 332 BC and 395 AD, during the
+            Ptolemaic period, by Ptolemy VI Philometer. Ptolemy XII Neos
+            Dionysos continued the work and built the exterior and interior
+            Hypostyle halls. The temple was built with local limestone by men
+            who rode on elephants, considered to be a Ptolemaic innovation.
+            Little remains of the original structure. Unfortunately, a good
+            portion of the temple has been destroyed over the millennia by
+            earthquakes, erosion by the Nile River and builders who stole stone
+            for unrelated projects. In 1893, a French archaeologist by the name
+            of Jacques de Morgan cleared the Southern portion (the half
+            dedicated to Sobek) of debris and restored it.
+            <span id="more-text-span" class="more-text">
+              During the Roman period additions to the temple were made in the
+              form of decorations in the main court. At this time, an outer
+              corridor was also added. Augustus built an outer enclosure wall
+              and a portion of the court, but those structures have since been
+              lost. The Coptic Church took over the temple and converted it into
+              their own place of worship. It was at this time that many of the
+              ancient reliefs were defaced and removed. Kom Ombo was dedicated
+              mainly to Horus and Sobek however, some of their family members
+              were part of the temple’s dedication as well. The Southern portion
+              of the temple was not just dedicated to Sobek, the god of
+              fertility, but also to Hathor
+            </span>
+            <span id="read-more-span" class="read-more">Read More</span>
+          </p>
+        </div>
+        <div id="galleryDiv" class="gallery">
+          <h1>Gallery</h1>
+          <div class="images-section-btns">
+            <button class="prevBtn" id="prev-btn">&lt;</button>
+            <button class="nextBtn" id="next-btn">&gt;</button>
+          </div>
+          <div id="gallery-container" class="images-section"></div>
+        </div>
+        <div class="trip-plan" id="tripPlanDiv">
+          <div class="accordion-container">
+            <div class="accordion">
+              <div class="accordion-title" id="day1-title">DAY 1</div>
+              <div class="accordion-content" id="day1-content">
+                <h4>Plan 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                  tellus nec turpis magna vestibulum eu. Convallis aenean leo
+                  aenean vitae suscipit eget.
+                </p>
+                <h4>Plan 2</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                  tellus nec turpis magna vestibulum eu. Convallis aenean leo
+                  aenean vitae suscipit eget.
+                </p>
+                <h4>Plan 3</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                  tellus nec turpis magna vestibulum eu. Convallis aenean leo
+                  aenean vitae suscipit eget.
+                </p>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-title" id="day2-title">DAY 2</div>
+              <div class="accordion-content" id="day2-content">
+                <h4>Plan 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                  tellus nec turpis magna vestibulum eu. Convallis aenean leo
+                  aenean vitae suscipit eget.
+                </p>
+                <h4>Plan 2</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                  tellus nec turpis magna vestibulum eu. Convallis aenean leo
+                  aenean vitae suscipit eget.
+                </p>
+                <h4>Plan 3</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                  tellus nec turpis magna vestibulum eu. Convallis aenean leo
+                  aenean vitae suscipit eget.
+                </p>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-title" id="day3-title">DAY 3</div>
+              <div class="accordion-content" id="day3-content">
+                <h4>Plan 1</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                  tellus nec turpis magna vestibulum eu. Convallis aenean leo
+                  aenean vitae suscipit eget.
+                </p>
+                <h4>Plan 2</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                  tellus nec turpis magna vestibulum eu. Convallis aenean leo
+                  aenean vitae suscipit eget.
+                </p>
+                <h4>Plan 3</h4>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                  tellus nec turpis magna vestibulum eu. Convallis aenean leo
+                  aenean vitae suscipit eget.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="include" id="includeDiv">
+          <div class="include-box">
+            <h4>Transport</h4>
+            <div class="labels">
+              <input type="radio" id="ac-bus" name="transport" value="ac-bus" />
+              <label for="ac-bus">AC bus</label>
+              <input
+                type="radio"
+                id="non-ac-bus"
+                name="transport"
+                value="non-ac-bus"
+              />
+              <label for="non-ac-bus">Non AC bus</label>
+              <input type="radio" name="SUV" id="SUV" value="SUV-appar" />
+              <label for="SUV">SUV</label>
+            </div>
+          </div>
+          <div class="include-box">
+            <h4>Hotel</h4>
+            <div class="labels">
+              <input
+                type="radio"
+                id="double-bed"
+                name="hotel"
+                value="double-bed"
+              />
+              <label for="double-bed">Double Bed</label>
+              <input
+                type="radio"
+                id="deluxe-room"
+                name="hotel"
+                value="deluxe-room"
+              />
+              <label for="deluxe-room">Deluxe Room</label>
+              <input
+                type="radio"
+                name="shared"
+                id="shared"
+                value="shared-appar"
+              />
+              <label for="shared">Shared Appartment</label>
+            </div>
+          </div>
+          <div class="include-box">
+            <h4>Food & Drink</h4>
+            <div class="labels">
+              <input
+                type="radio"
+                name="food"
+                id="breakfast"
+                value="breakfast"
+              />
+              <label for="breakfast">Breakfast</label>
+              <input type="radio" name="food" id="launch" value="launch" />
+              <label for="launch">Launch</label>
+              <input type="radio" name="food" id="dinner" value="dinner" />
+              <label for="dinner">Dinner</label>
+            </div>
+          </div>
+          <div class="include-box">
+            <h4>Snack</h4>
+            <div class="labels">
+              <input type="radio" name="snack1" id="snack1" value="breakfast" />
+              <label for="snack1">Breakfast</label>
+              <input type="radio" name="snack2" id="snack2" value="launch" />
+              <label for="snack2">Launch</label>
+              <input type="radio" name="snack3" id="snack3" value="dinner" />
+              <label for="snack3">Dinner</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="book">
+        <h2>Book a Destination</h2>
+        <input placeholder="your name" type="text" />
+        <input placeholder="@email.com" type="email" />
+        <input placeholder="+20 12343214" type="text" />
+        <select class="people-num" name="people" id="peopleNum">
+          <option value="">Number of people</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <input type="date" name="" id="" />
+        <textarea
+          placeholder="message"
+          name="message"
+          id="yourMessage"
+        ></textarea>
+        <button>Book Now</button>
+      </div>
+    </div>
+    <div class="pagination" id="pagination">
+      <h1>Destination Recomendation For You</h1>
+    </div>
+    <div id="content" class="content section"></div>
+
+    <div class="feedback">
+      <h1>Our Customers Oppinions</h1>
+      <div class="slider">
+        <div class="slider-wrapper">
+          <div class="card">
+            <div class="avatar-feedback">
+              <div class="box">
+                <img class="avatar" src="../images/Mask Group (1).png" alt="" />
+                <div class="name-country">
+                  <span class="name">Alexander R</span>
+                  <span class="country">Russia</span>
+                </div>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, hic labore non soluta rem sequi accusamus laboriosam ea
+                libero assumenda placeat cumque ratione, at iusto numquam. Rem
+                quibusdam esse rerum.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="avatar-feedback">
+              <div class="box">
+                <img class="avatar" src="../images/Mask Group.png" alt="" />
+                <div class="name-country">
+                  <span class="name">Alexander R</span>
+                  <span class="country">Russia</span>
+                </div>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, hic labore non soluta rem sequi accusamus laboriosam ea
+                libero assumenda placeat cumque ratione, at iusto numquam. Rem
+                quibusdam esse rerum.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="avatar-feedback">
+              <div class="box">
+                <img class="avatar" src="../images/Mask Group.png" alt="" />
+                <div class="name-country">
+                  <span class="name">Alexander R</span>
+                  <span class="country">Russia</span>
+                </div>
+              </div>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, hic labore non soluta rem sequi accusamus laboriosam ea
+                libero assumenda placeat cumque ratione, at iusto numquam. Rem
+                quibusdam esse rerum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-buttons">
+        <button class="nav-button left">&lt;</button>
+        <button class="nav-button right">&gt;</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div>
+          <div>
+            <a href="#">
+              <img src="../images/Ellipse 2.png" alt="logo2" />
+              <span>Logo</span></a
+            >
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sem erat
+            purus commodo mollis viverra vitae fusce. Feugiat condimentum leo,
+            dui posuere sit.
+          </p>
+        </div>
+
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Contact US</a></li>
+            <li><a href="#">Help me</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Links</h4>
+          <ul>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About US</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Follow Me:</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="../images/youtube.png" alt="youtube" />Youtube</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images/facebook-circle-line.png"
+                  alt="facebook"
+                />Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images/linkedin-box-line.png"
+                  alt="linkedin"
+                />LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  src="../images/instagram-line.png"
+                  alt="instagram"
+                />Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

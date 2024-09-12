@@ -1,0 +1,89 @@
+section.content{
+    width: 93.6%;
+    margin-top: 24px ;
+    margin-left:36px ;
+    background-color:#FFFFFF;
+    padding: 24px 0px;
+    border-radius: 12px;
+
+}
+
+.content .title{
+    box-sizing: border-box;
+    color: #231E1E;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: .75px;
+    display: block;
+    margin-left: 32px;
+    /* display: flex; */
+    
+}
+form{
+    width: 95.14%;
+    margin-left: 32px;
+    margin-top: 16px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.inputs{
+height: 97px;
+min-width: 47%;
+margin-right: 2%;
+margin-bottom: 24px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-transform: capitalize;
+}
+
+div.inputs label{
+    color: #231E1E;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 1px;
+}
+div.inputs input, select{
+    text-transform: capitalize;
+    color: #231E1E;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1px;
+    padding:17px 0 18px 40px ;
+    border: 2px #D5BEBE solid;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+.passwd{
+    font-size: 27px;
+    position: relative;
+}
+.passwd i{
+    position: absolute;
+    right: 19px;
+    bottom: 19px;
+}
+
+
+
+
+input#adduser{
+    min-width: 97.14%;
+    display: block;
+    background-color: #071597;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color:#FFFFFF;
+    border-radius: 12px;
+    padding:16px 0 ;
+    margin-top: 8px;
+    border: none;
+    text-transform: capitalize;
+}
