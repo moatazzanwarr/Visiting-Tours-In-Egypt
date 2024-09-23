@@ -13,8 +13,6 @@ menu_close.addEventListener("click",()=>{
     menu_open.style.display = "block"
 });
 
-
-
 document
   .getElementById("your destination")
   .addEventListener("change", function () {
@@ -137,7 +135,7 @@ const data = [
   },
   {
     name: "Abu Simbel Temples",
-    stars: "/home_page/images/Group 5.png",
+    stars: "./images/Group 5.png",
     paragraph: "350$",
     image: "./images/temple-3932028_1920.png",
   },
@@ -231,49 +229,6 @@ viewAllButton.addEventListener("click", () => {
 });
 displayItems(currentPage);
 
-// slider
-// const sliderWrapper = document.querySelector(".slider-wrapper");
-// const slides = document.querySelectorAll(".card");
-// const prevButton = document.querySelector(".nav-button.left");
-// const nextButton = document.querySelector(".nav-button.right");
-// let currentIndex = 0;
-
-// function updateSliderPosition() {
-//   sliderWrapper.style.transform = `translateX(-${currentIndex * 80}%)`;
-// }
-
-// prevButton.addEventListener("click", () => {
-//   if (currentIndex >= 0) {
-//     currentIndex--;
-//     updateSliderPosition();
-//   } else if (currentIndex < 0) {
-//     currentIndex = 2;
-//     updateSliderPosition();
-//   }
-// });
-
-// nextButton.addEventListener("click", () => {
-//   if (currentIndex <= slides.length - 1) {
-//     currentIndex++;
-//     updateSliderPosition();
-//   } else if (currentIndex > slides.length - 1) {
-//     currentIndex = 0;
-//     updateSliderPosition();
-//   }
-// });
-
-// setInterval(() => {
-//   if (currentIndex <= slides.length - 1) {
-//     currentIndex++;
-//     updateSliderPosition();
-//   } else if ((currentIndex = slides.length - 1)) {
-//     currentIndex = 0;
-//     updateSliderPosition();
-//   }
-// }, 3000);
-
-//slider 2
-
 const sliderWrapper = document.querySelector(".slider-wrapper");
 const slides = document.querySelectorAll(".card");
 const prevButton = document.querySelector(".nav-button.left");
@@ -351,22 +306,4 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(section);
   });
 });
-//
 
-// Ensure the DOM is fully loaded before accessing the element
-// let selectorValue;
-// const selector = document.querySelector(".mySelector");
-// selector.addEventListener("change", () => {
-//   selectorValue = selector.value;
-//   console.log(selectorValue);
-// });
-// document.addEventListener("DOMContentLoaded", () => {
-//   const selectElement = document.getElementById("your destination");
-
-//   selectElement.addEventListener("change", () => {
-//     const selectedValue = selectElement.value;
-//     exportedValue = selectedValue;
-//     // console.log(selectedValue);
-//   });
-// });
-// console.log(exportedValue);

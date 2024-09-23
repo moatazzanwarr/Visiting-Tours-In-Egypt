@@ -322,9 +322,15 @@ body>section:nth-child(6)>div>div{
     margin-bottom: 30px;
 }
 
+
+
 body>section:nth-child(6)>div>h1{
     font-size: 42px;
     color: #231E1E;
+}
+body>section:nth-child(6) .arrow{
+    display: flex;
+    gap: 10px;
 }
 body>section:nth-child(6)>div>div>div>span{
     display: flex;
